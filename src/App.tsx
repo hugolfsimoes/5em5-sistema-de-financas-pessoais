@@ -5,6 +5,7 @@ import { Category } from './types/Category'
 import { items } from './data/items'
 import { categories } from './data/categories'
 import { getCurrentMonth, filterListByMonth } from './helpers/dateFilter'
+import TableArea from './components/TableArea'
 
 function App() {
   const [ list, setList ] = useState(items);
@@ -20,7 +21,7 @@ function App() {
         <C.HeaderText>Sistema Financeiro</C.HeaderText>
       </C.Header>
       <C.Body>
-        ...
+        <TableArea />
       </C.Body>
     </C.Container>
   );
